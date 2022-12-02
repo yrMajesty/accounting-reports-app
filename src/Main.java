@@ -12,11 +12,11 @@ public class Main {
             int command = scanner.nextInt();  // выбор пользователя
 
             if (command == 1) { // Считать все месячные отчёты
-                monthReport.addMonth();
+                monthReport.readMonthReport();
             } else if (command == 2) {  // Считать годовой отчёт
                 yearReport.addYear();
             } else if (command == 3) {    // Сверить отчёты
-                monthReport.monthYearStatistics();
+                monthReport.checkReport();
             } else if (command == 4) {    //Вывести информацию о всех месячных отчётах
                 monthReport.printStatistics();
             } else if (command == 5) {   // Вывести информацию о годовом отчёте

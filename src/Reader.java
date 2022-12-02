@@ -13,6 +13,16 @@ public class Reader {
             return null;
         }
     }
+    public static String readMonthNumber(int i) {
+        if (i < 10) {
+            String reader = Reader.readFileContentsOrNull("resources/m.20210" + i + ".csv");
+            return reader;
+        } else {
+            String reader = Reader.readFileContentsOrNull("resources/m.2021" + i + ".csv");
+            return reader;
+        }
+
+    }
 
 
 }
